@@ -1,7 +1,7 @@
-# libdebug
+# libdebug_legacy
 libdebug is a python library to automate the debugging of a binary executable.
 
-This is a copy of the legacy version of libdebug. The main feature for which this repo still preserved is because it allows access to low level commands needed to emulate ptrace in [GDB+](https://github.com/Angelo942/gdb_plus).
+This is a copy of the legacy version of [libdebug](https://github.com/libdebug/libdebug). The main feature for which this repo still preserved is because it allows access to low level commands needed to emulate ptrace in [GDB+](https://github.com/Angelo942/gdb_plus).
 
 ## Install
 ```bash
@@ -11,7 +11,7 @@ pip install git+https://github.com/Angelo942/libdebug
 ## Attach/Detach
 You can use the method `run` to start a binary using the path to the binary
 ```python
-from libdebug import Debugger
+from libdebug_legacy import Debugger
 d = Debugger()
 d.run("./test")
 ```
